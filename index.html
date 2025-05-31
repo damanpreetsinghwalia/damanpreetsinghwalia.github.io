@@ -1,11 +1,82 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Welcome To My Portfolio!</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Damanpreet Singh Walia</h2>
+    <p class="text-lg">A passionate developer building web applications</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+      <p class="max-w-2xl mx-auto text-lg">I’m an up-and-coming developer fluent in Python, with hands-on experience using technologies like Django and SQL. I enjoy building efficient, scalable web applications and continuously expanding my skill set in backend development.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2">Project One</h3>
+          <p>A brief description of your project goes here.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2">Project Two</h3>
+          <p>Another brief project description here.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2">Project Three</h3>
+          <p>More details about this project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+      <form class="max-w-xl mx-auto text-left" onsubmit="return submitForm(event)">
+        <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded">
+        <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded">
+        <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded" rows="5"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Damanpreet Singh Walia. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
